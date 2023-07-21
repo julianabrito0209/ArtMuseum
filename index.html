@@ -16,11 +16,16 @@
 
         <header id="cabecalho">
             <h1>ARTMUSEUM  </h1>
-        <nav>
-            <a href="#">HOME</a>
-            <a href="#">GALERIA</a>
-            <a href="#">CONTATO</a>
+        <nav id="menu" >
+            <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">GALERIA</a></li>
+            <li><a href="#">CONTATO</a></li>
+               </ul>
         </nav>
+        <button id="menubutton" onclick="mostrar()">
+            =
+        </button>
 
     </header>
     <main>
@@ -35,8 +40,8 @@
         <h4>Elizabeth</h4>
         <br>
         <picture>
-        <source media="(max-heigth: 500px)" src="images/images/elizabethLandscape.png">
-        <source media="(max-width: 730px)" srcset="images/images/elizabethMenor.png">
+        <source media="(orientation: landscape) and (max-height: 500px)" srcset="images/images/elizabethLandscape.png" class="foto">
+        <source media="(max-width: 730px)" srcset="images/images/elizabethMenor.png" class="foto">
         <img src="images/images/elizabeth.jpg" alt="" class="foto">
         <br>
         
@@ -106,4 +111,12 @@
     
     
 </body>
+<script>
+    function mostrar(){
+        if (menu.style.display== "none"){
+            menu.style.display = "block"}
+            else{menu.style.display = "none"}
+        }
+    
+</script>
 </html>

@@ -5,8 +5,14 @@
 
 }
 .menu{
-    width: 730px;
+    width: auto;
     display: flex;
     flex-direction: column;
 }
-   
+   #menu{
+    display: none;
+
+   }
+   #menubutton{
+    display: block;
+   }
