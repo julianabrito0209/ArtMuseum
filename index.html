@@ -16,17 +16,17 @@
 
         <header id="cabecalho">
             <h1>ARTMUSEUM  </h1>
-        <nav id="menu" >
-            <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">GALERIA</a></li>
-            <li><a href="#">CONTATO</a></li>
-               </ul>
-        </nav>
-        <button id="menubutton" onclick="mostrar()">
+        
+        <NAV>
+        <button id="menu" onclick="mostrar()">
             =
+            <ul id="menuopcoes">
+                <li>HOME</li>
+                <li>GALERIA</li>
+                <li>CONTATO</li>
+            </ul>
         </button>
-
+        </NAV>
     </header>
     <main>
         <br>
@@ -113,9 +113,9 @@
 </body>
 <script>
     function mostrar(){
-        if (menu.style.display== "none"){
-            menu.style.display = "block"}
-            else{menu.style.display = "none"}
+        if (menuopcoes.style.display== "none"){
+            menuopcoes.style.display = "block"}
+            else{menuopcoes.style.display = "none"}
         }
     
 </script>

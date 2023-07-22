@@ -9,7 +9,6 @@
     height: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px auto;
-
 }
 
 #cabecalho{
@@ -32,25 +31,57 @@ ul{ display: flex;
     list-style: none;
     gap: 20px;
     align-items: center;
+    background-color: black;
 }
 
-li a{
+li {
     height: 50px;
     text-decoration: none;
     color: white;
     font-size: 14pt;
     line-height: 50px;
+    gap: 20px;
+    
 }
 
-#menubutton{
-    width: 50px;
+#menu{
+    width: 150px;
     height: 50px;
     border: 2px solid white;
     background-color: transparent;
     color: white;
     cursor: pointer;
-    display: none;
+    display: block;
+   
 }
+nav{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#menuopcoes{
+    list-style: none;
+    width: 100%;
+    color: white;
+    
+}
+#menuopcoes li{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#menuopcoes li:hover{
+    background-color: rgb(234, 228, 228);
+    color: black;
+}
+
 main{
     width: 90%;
     height: auto;
@@ -105,9 +136,10 @@ h6{
     font-weight:bolder;
 }
 .menu{
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 footer{
     width: 100%;

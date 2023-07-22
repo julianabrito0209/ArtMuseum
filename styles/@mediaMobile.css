@@ -8,6 +8,7 @@
     width: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
    #menu{
     display: none;
